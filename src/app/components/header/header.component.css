@@ -1,0 +1,61 @@
+
+    #cir {
+        font-size: 2em;
+        display: inline-block;
+        width: 0.4em;
+        box-sizing: content-box;
+        height: 0.4em;
+        border: 0.1em solid red;
+        position: relative;
+        border-radius: 0.35em;
+      }
+      #cir:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -0.25em;
+        bottom: -0.1em;
+        border-width: 0;
+        background: red;
+        width: 0.35em;
+        height: 0.08em;
+        transform: rotate(45deg);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      .row {
+        margin-left:-5px;
+        margin-right:-5px;
+      }
+        
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 16px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      

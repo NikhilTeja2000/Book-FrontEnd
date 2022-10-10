@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<h1>Books By Category Id:</h1>
+
+<hr><hr><hr>
+
+  <div class="row row-cols-1 row-cols-md-4">
+    <div class="col mb-4"  style="cursor:pointer ;" *ngFor="let category of categories">
+      <div class="card h-100 shadow bg-white rounded" *ngIf="category.categoryId==this.href">
+        <img src="{{category.image}}" class="card-img-top" alt="..." height="200px">
+        <div class="card-body">
+          <h5 class="card-title">{{category.title}}</h5>
+          <h5 class="card-title">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">ISBN:
+                {{category.isbn}}</li>
+              <li class="list-group-item">Year:{{category.year}}</li>
+              <li class="list-group-item">Price:{{category.price}}</li>
+              
+              <li class="list-group-item">Category ID:{{category.categoryId}}</li>
+            </ul>
+        </h5>
+          <p class="card-text">Description:{{category.description}}</p>
+          <button class="btn btn-secondary btn-block" >Add to Cart</button>
+          
+          <button class="btn btn-secondary btn-block" >Add to Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>

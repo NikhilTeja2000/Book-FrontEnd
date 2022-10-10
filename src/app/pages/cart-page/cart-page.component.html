@@ -1,0 +1,98 @@
+<app-navbar></app-navbar>
+<div >
+    <div class="row">
+        <div class="col-lg-1">
+            <app-add1></app-add1>
+        </div>
+        <div class="col-lg-10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam porro id soluta sit distinctio quidem odit aliquid praesentium repellendus cum architecto fuga dolorum earum, excepturi rem iste quos maiores. Porro.</p>
+            
+            
+            
+<div class="media">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884yE-aP3PQdStnZ7KZecX04EDdYa2YpRgQ&usqp=CAU" class="mr-3" alt="...">
+  <div class="media-body">
+ 
+    <h5 class="mt-0" *ngIf="this.wc" style="background-color: orange;">Welcome {{this.wc}} :</h5>
+    <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+  
+    <div class="container" style="display: left" *ngFor="let category of categories">
+      <div class="column text-center" *ngIf="category.cid==this.wi" >
+        <table border="1" class="table-success">
+          <tr >
+              
+            <th>User name</th>
+            <th>User ID</th>
+          
+               
+      <th>City</th>
+      <th>House No</th>
+      
+      <th>pincode</th>
+      <th>Contact number</th>
+          </tr>
+          <tr *ngIf="category.cid==this.wi" >
+
+            <td >{{category.cname}}</td>
+            <td >{{category.cid}}</td>
+            <td>{{category.city}}</td>
+      <td >{{category.houseno}}</td>
+      <td>{{category.pincode}}</td>
+      <td >9429858357</td>
+            
+            
+            
+          </tr>
+          
+        </table>
+        <br>
+        
+      </div>
+
+  </div>
+  
+  <div class="container" style="display: left" *ngFor="let category of carty">
+    <div class="column text-center" *ngIf="category.userId==this.wi">
+      <table border="1" class="table table-dark">
+        <tr>
+            
+          <th>Title</th>
+          <th>Image</th>
+        
+             
+    <th>Price</th>
+    <th>ISBN</th>
+    
+        </tr>
+        <tr  >
+
+          <td >{{category.title}}</td>
+          
+          <td><img src="{{category.image}}" class="card-img-top" alt="..." width="10" height="200"></td>
+          <td>{{category.isbn}}</td>
+    <td >{{category.price}}</td>
+          
+          
+          
+        </tr>
+        
+      </table>
+      <br>
+      
+      <button >Place Order</button>
+      <br>
+    </div>
+
+</div>
+  </div>
+</div>
+            
+           
+               </div>
+               
+        <div class="col-lg-1">
+            <app-add2></app-add2>
+        </div>
+    </div>
+</div>
+   

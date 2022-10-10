@@ -1,0 +1,14 @@
+
+#cde {  
+    height: 650 px;  
+    color: #fff;
+    background-size: 100% ;  
+    background-size: cover;  
+}
+#cdee {  
+    height: 650 px;  
+    color: #fff;
+    background-size: 100% ;  
+    background-size: cover; 
+    transform: rotate(90deg); 
+}

@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div >
+    <div class="row">
+        <div class="col-lg-1">
+            <app-add1></app-add1>
+        </div>
+       <div class="col-lg-10">
+        <div  style="display: left" *ngFor="let category of categories">
+          <div class="column text-center" *ngIf="category.userId==this.wi">
+        
+                <td >{{category.title}}</td>
+                <td><img src="{{category.image}}" class="card-img-top" alt="..." width="10" height="200"></td>
+                
+              
+          </div>
+
+      </div>
+     
+       </div>
+        <div class="col-lg-1">
+            <app-add2></app-add2>
+        </div>
+    </div>
+</div>

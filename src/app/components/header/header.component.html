@@ -1,0 +1,86 @@
+<div class="jumbotron">
+    <h1 class="display-4">Explore and Buy Books at Our Bookstore</h1>
+    <p class="lead">
+        Amazon.in offers you over 25 million titles across categories such as Children’s Books, Business & Economics, Indian Writing and Literature & Fiction.
+        
+        Reading books is the favourite pastime of many people. If you’re bitten by the book-bug too, then there is a massive collection of books for you to read. From bestsellers to new & future releases, the choices are exhaustive when you shop online at India's Largest Bookstore.
+        
+        From books for dummies, to textbooks for students, there are a wide variety of books. You can explore the young adults books store if you’re looking to gift a nice book to a teenager, where you can find books from the best-selling series.
+        
+        Innumerable books are divided under various categories like action & adventure, business & economics, comics & mangas, crime, thriller & mystery, fiction, humour, and romance. You can browse by genre when you buy online making it more convenient for you to narrow down your choices. Then there are biographies and true accounts bestsellers as well. These books are available in different formats like hardcover, paperback, and board book.
+        
+        Gone are the days, when books were always hand-held. In this digital age, there are Kindle eBooks which you can read on your Amazon Kindle. Some selected range of free eBooks are present if you want to download them on to your device. </p>
+    <hr class="my-4">
+    
+   
+    <hr>
+    <hr>
+    <p></p><hr>
+    <hr>
+
+
+    <div class="row">
+      <div class="column">
+        <table>
+          <tr>
+            <th>Top 5 </th>
+          </tr>
+          <tr *ngFor="let category of categories">
+            <td><div class="spinner-border text-info" role="status">
+              <span class="sr-only">Loading...</span>
+            </div> {{category.tlist}}</td>
+          </tr>
+          
+        </table>
+      </div>
+      <div class="column">
+        <table>
+          <tr>
+            <th>Worth Reading</th>
+          </tr>
+          <tr *ngFor="let category of categories">
+            <td><div class="spinner-grow text-danger" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>{{category.wlist}}</td>
+          </tr>
+        
+        </table>
+      </div>
+    </div>
+    <p>
+  Apart from that, there are audiobooks,  can be used by those who prefer listening to reading. This is especially helpful for students who want to listen to recorded lectures by reputed professors, and also to those who can’t read.
+        
+        When you shop online, there are hot pre-orders. You can easily secure that book you’ve always wanted to read, as the book will be delivered at your doorstep soon after its official release. You also have easy access to most of the new arrivals, with book descriptions that help you get an idea about the book without spoilers.
+        
+        You can also use the Search Inside!™ feature to look inside the book and browse through a few pages of the book, just as you would at a bookstore. Read book reviews written by Amazon customers, and review your favourite books too. Amazon.in also offers you personalised recommendations based on your browsing and purchasing history to help you discover new books that might interest you. So, whether you are looking to buy a story book for children; study guides for engineering, law or medicine; Biographies or books on Computing & Digital Media; Amazon.in has a book for you.
+</p>
+
+<div class="row">
+  <div class="column">
+    <table>
+      <tr>
+        <th>Delivery within 2 days | Order now</th>
+      </tr>
+      <tr *ngFor="let category of categories">
+        <td><div class="spinner-grow text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div> {{category.dlist}}</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div class="column">
+    <table>
+      <tr>
+        <th>Books in focus</th>
+      </tr>
+      <tr *ngFor="let category of categories">
+        <td><div class="spinner-border text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>{{category.flist}}</td>
+      </tr>
+    
+    </table>
+  </div>
+</div>
+
